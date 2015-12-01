@@ -1,2 +1,3 @@
 # freecodecamp
-Solutions for FreeCodeCamp.
+Solutions for FreeCodeCamp challenges by Michael Peer.
+
