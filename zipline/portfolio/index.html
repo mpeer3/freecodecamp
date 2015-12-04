@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Michael Peer</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   
+      <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Kaushan+Script'>
+      <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default " id="mainmenu">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://dev.michael-peer.net/">Michael Peer  
+          </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="http://dev.michael-peer.net/">Home</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Private IT-Projekte <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#kabelsalat_ct">Kabelsalat. Blog.</a></li>
+            <li><a href="#kabelsalat_wiki">Kabelsalat. WIKI</a></li>
+            <li><a href="#pomodoro">Pomodoro-Timer</a></li>
+       
+          </ul>
+        </li>
+      
+          <li><a href="http://www.michael-peer.net/kabelsalat/?page_id=348">Über</a></li>
+         
+          <li><a href="http://www.michael-peer.net/kabelsalat/?page_id=4">Impressum/Kontakt</a></li>
+        </ul>
+        <img id="mp_mini" src="images/mp.png" alt="Michael Peer">
+      </div>
+    </nav>
+
+    <div class="container masthead">
+       <div class="col-md-12">
+         <h1 id="title">Michael Peer.</h1>
+         <h2 id="subtitle">{ DEV Corner }</h2>
+         <h2 id="subtitle2">/*Webdevelopment,Databanken,Coding usw. */</h2>
+       </div>
+    </div>
+    <div class="container dev_item" id="welcome">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Herzlich Willkommen! </h1>
+          <img id="logo_mean" src="images/mean.jpg" alt="Logo Mean Stack">
+        </div>
+        <div class="col-md-6">
+         <a href="#mainmenu"><span class="glyphicon glyphicon-triangle-top go_up" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Nach oben"></span></a>
+          <h4> Willkommen auf meiner Seite "DEV Corner", einer Unterseite meines <a href="http://michael-peer.net">IT-Blogs "Kabelsalat" </a>. Sie finden hier als Ergänzung zu meinem Blog ein paar Beispiele meiner privaten IT-Projekte aus den Themengebieten Webdevelopment, Softwaredevelopment und Datenbanken. Meine Schwerpunkte sind derzeit: Javascript, AngularJS, MongoDB und das Express-Framework - also vereinfacht gesagt der MEAN-Stack. Für das Hosting verwende ich meine Eigenbau-Cloud "MP-Cloud" basierend auf Proxmox VE und Docker.</h4>
+
+        </div> 
+   
+      </div>
+    </div>
+    <div class="container dev_item dev_alt" id="kabelsalat_ct" >
+        <div class="row">
+          <div class="col-md-6">
+
+         
+
+           <h1>Kabelsalat. Blog. </h1>
+           <a href="http://michael-peer.net"><img id="logo_kabelsalat" src="images/kabelsalat.png" alt="Logo Kabelsalat"></a>
+          </div>
+           <div class="col-md-6">
+           <a href="#mainmenu"><span class="glyphicon glyphicon-triangle-top go_up" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Nach oben"></span></a>
+          <h4> Es gibt zwar schon genug IT-Blogs, aber auf einen mehr oder weniger kommt es auch nicht an. Ein Besuch auf meinem <a href="http://michael-peer.net">Wordpress-IT-Blog "Kabelsalat" </a> lohnt sich aber sicher - Sie finden dort Tutorials, Artikel und Blogposts zu den Themen Servervirtualisierung, Linux, Webdevelopment, Softwaredevelopment und IT-Security. Ein spezielles Kapitel ist der Virtualisierungslösung Proxmox VE gewidmet. </h4>
+          <img class="tools_logo" src="images/wp.png" alt="Wordpress" data-toggle="tooltip" data-placement="right" title="Wordpress">
+        </div> 
+        </div>
+       
+
+    </div>
+    <div class="container dev_item" id="kabelsalat_wiki" >
+        <div class="row">
+          <div class="col-md-6">
+           <h1>Kabelsalat. WIKI. </h1>
+           <a href="http://michael-peer.net/wiki"><img id="logo_wiki" src="images/wiki.png" alt="Logo Wiki"> </a>
+          </div>
+           <div class="col-md-6">
+            <a href="#mainmenu"><span class="glyphicon glyphicon-triangle-top go_up" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Nach oben"></span></a>
+          <h4> Damit ich die von mir durchgeführten Installationsschritte meiner Cloud "MP-Cloud" nicht vergesse, protokolliere ich alles in meiner <a href="http://michael-peer.net/wiki">WIKI</a> Sie finden dort detaillierte Beschreibungen der Installationsschritte für Proxmox VE in Debian und für Docker.</h4>
+          <img class="tools_logo" src="images/wiki_logo.png" alt="WIKI" data-toggle="tooltip" data-placement="right" title="WIKI">
+        </div> 
+        </div>
+       
+
+    </div>
+     <div class="container dev_item dev_alt" id="pomodoro">
+        <div class="row">
+          <div class="col-md-6">
+           <h1>Pomodoro-Timer </h1>
+           <a href="http://dev.michael-peer.net/pomodoro"> <img id="logo_pomodoro" src="images/pomodoro.png" alt="Pomodoro"> </a>
+          </div>
+           <div class="col-md-6">
+            <a href="#mainmenu"><span class="glyphicon glyphicon-triangle-top go_up" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Nach oben"></span></a>
+          <h4> Der Begriff "Pomodoro" kommt aus dem Zeitmanagement: 25min Arbeitsintervalle und 5min Pausenintervalle wechseln einander ab. Mein Pomodoro-Timer ist ein Tool, bei dem Arbeits- und Pausenzeiten frei eingestellt werden können. Er is praktisch, und sieht noch nebenbei zum Anbeissen aus.</h4>
+           <img class="tools_logo" src="images/js.png" alt="JS" data-toggle="tooltip" data-placement="right" title="Javascript">
+           <img class="tools_logo" src="images/jquery.gif" alt="jQuery" data-toggle="tooltip" data-placement="right" title="jQuery">
+           <img class="tools_logo" src="images/bootstrap.jpeg" alt="Bootstrap" data-toggle="tooltip" data-placement="right" title="Bootstrap">
+           <img class="tools_logo" src="images/fcc.png" alt="FreeCodeCamp" data-toggle="tooltip" data-placement="right" title="FreeCodeCamp Challenge">
+           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> Mehr... </button>
+		   <div class="collapse" id="collapseExample">
+  			<div class="well">
+              Mein Pomodoro-Timer verwendet das populäre Bootstrap-Framework in Kombination mit jQuery. Herzstück des Javascript-Codes ist die Funktion
+              <i>setInterval(update_disp, 1000) </i> als Taktgeber. Sobald der Start-Button gedrückt wird, wird im Sekundentakt <i>update_disp()</i> aufgerufen. Dadurch werden der Countdown und der Fortschrittsbalken aktualisiert. Mittels <i>trigger_break() </i> wird automatisch zwischen Arbeits- und Pausenintervallen gewechselt. Durch das Drücken des Stop-Buttons wird der Timer via <i>clearInterval() </i> angehalten. Mehr zu meinem Code auf <a href="https://github.com/mpeer3">Github  </a>.
+  			</div>
+		  </div>
+        </div> 
+        </div>
+       
+
+    </div>
+    <div class="row" id="contact">
+      <div class="col-md-4">
+        <a href="https://github.com/mpeer3"> <img id="octocat" src="images/Octocat.png" alt="Octocat"> </a>
+      </div>
+      <div class="col-md-4">
+        <p>by Michael Peer, Vienna, 2015</p>
+       <p>michael@michael-peer.net</p>
+       <p>Letztes Update: 04.12.2015 </p>
+      </div>
+     </div>
+  </body>
+
+
+
+</html>

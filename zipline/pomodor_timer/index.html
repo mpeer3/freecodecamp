@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Michael Peer's Pomodoro Timer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/pomodoro.css">
+    <script src="js/pomodoro.js"> </script>
+ </head>
+ <body>
+	<div class="container">
+  <div class="row">
+    <div class="col-md-6 heading col-md-offset-3">
+      <h1>Pomodoro-Timer</h1>
+    </div>
+  </div>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 sessionset col-md-offset-1">
+      <p> Session length: <span id="min_work">25</span>
+        
+      
+       </p>
+    </div>
+    <div class="col-md-4 sessionset ">
+      <p> 
+        <button id="min_work_inc " onclick="inc_min() " class="btn ctr"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+      
+        <button id="min_work_dec " onclick="dec_min() " class="btn ctr"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button></p>
+    </div>
+    <div class="col-md-4 ">
+      <button id="start_timer" class="btn btn-success" onclick="start_timer()"> Start </button>
+       <button id="stop_timer" class="btn btn-danger" onclick="stop_timer()"> Stop </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 sessionset col-md-offset-1">
+      <p> Break length: <span id="min_break">5</span>
+        
+      
+       </p>
+    </div>
+    <div class="col-md-4 sessionset ">
+      <p> 
+        <button id="min_break_inc " onclick="break_inc_min() " class="btn ctr"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+      
+        <button id="min_break_dec " onclick="break_dec_min() " class="btn ctr"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button></p>
+    </div>
+  </div>
+  <div class="row">
+     <div class="col-md-6 heading col-md-offset-3">
+       <h2 id="round_type">Session</h2>
+    </div>
+    
+  </div>
+  <div class="row">
+     <div class="col-md-6 heading col-md-offset-3">
+       <h2 id="timer_disp">00:00</h2>
+    </div>
+    
+  </div>
+  <div class="row">
+   <div class="progress col-md-6 col-md-offset-3">
+     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+  </div>
+</div>
+<div class="container about">
+  <h4>by Michael Peer, 2015</h4>
+  <h4><a href="http://michael-peer.net">http://michael-peer.net</a></h4>
+  <h4>michael@michael-peer.net</h4>
+</div>
+
+ </body>
+</html>

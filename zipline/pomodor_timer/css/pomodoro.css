@@ -1,0 +1,48 @@
+
+body {
+  background-image: url("../images/Tomato.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color:black;
+  font-family: 'Marck Script', cursive;
+
+
+}
+.go_up{
+  padding:0px;
+  margin:0px;
+}
+.container {
+
+  min-width:500px;
+}
+.heading {
+  
+  padding-bottom:1em;
+  text-align:center;
+ 
+  
+}
+.sessionset{ 
+
+   font-size: 2em;
+}
+h1 {
+   font-size:5em
+}
+h2 {
+   font-size:4em
+}
+btn {
+  position:fixed;
+ 
+}
+#start_timer, #stop_timer {
+ 
+  color:black;
+  font-weight:bold;
+  font-size:2em;
+  min-width:100px;
+}

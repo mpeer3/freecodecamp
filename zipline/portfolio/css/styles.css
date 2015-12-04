@@ -1,0 +1,66 @@
+body {
+background-image: url("../images/code_bg.png");
+background-repeat:repeat-y;
+background-attachment: fixed;
+}
+
+
+.masthead {
+  background-color: #d5effc;
+  	background-image: url("../images/mp_dev_header.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  min-height:387px;
+  min-width: 1024px
+
+}
+#title, #subtitle,#subtitle2 {
+	text-align:center;
+	font-family: Kaushan Script;
+
+}
+#title {
+	font-size:100px;
+}
+#subitle {
+	font-size:80px;
+}
+#subitle2 {
+	font-size:50px;
+}
+#logo_mean, #logo_kabelsalat, #logo_wiki, #logo_pomodoro{
+	width:200px;
+}
+#mp_mini{
+	width:50px;
+	height:50px;
+	float:right;
+}
+.dev_item {
+    min-height:300px;
+    min-width: 1024px;
+    border:1px solid #d5effc;
+    font-family: "PT Sans", sans-serif;
+    padding-top:50px;
+    text-align:justify;
+}
+.dev_alt {
+	background-color:#d5effc;
+}
+
+#contact {
+	min-width: 1024px;
+	font-family: "PT Sans", sans-serif;
+    padding-top:50px;
+    text-align:center;
+    background-color:white;
+}
+
+#octocat {
+	width:100px;
+}
+
+.tools_logo {
+	width:50px;
+	margin:5px;
+}
