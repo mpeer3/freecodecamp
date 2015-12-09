@@ -1,4 +1,4 @@
-/*Pomodor-Timer by Michael Peer 2015 
+/*Pomodoro-Timer by Michael Peer 2015 
   michael@michael-peer.net
   http://michael-peer.net
   ===================================

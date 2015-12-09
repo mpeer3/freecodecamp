@@ -1,0 +1,30 @@
+body {
+background-image: url("../images/Fortune_cookie.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Marck Script', cursive;
+}
+.jumbotron {
+
+  margin: 1em;
+  color:black;
+  background:rgba(255,255,255,0) ;
+}
+#main_capt {
+  font-size:90px;
+}
+#quotebox {
+  color:blue;
+  background-color:#FFFF47;
+  text-align:center;
+  padding:1em;
+}
+.footer {
+  font-size:20px;
+}
+#lic {
+
+ font-size:10px;
+}

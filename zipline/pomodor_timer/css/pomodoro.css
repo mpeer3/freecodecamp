@@ -1,15 +1,16 @@
 
 body {
+  
+  color:black;
+  font-family: 'Marck Script', cursive;
   background-image: url("../images/Tomato.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  color:black;
-  font-family: 'Marck Script', cursive;
-
 
 }
+
 .go_up{
   padding:0px;
   margin:0px;
