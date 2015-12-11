@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Michael Peer's Simple JS Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"> </script>
+    <link rel="stylesheet" href="css/calc.css">
+    <script src="js/calc.js"> </script>
+ </head>
+ <body>
+	<div class="bk" ng-app="campcalc" ng-controller="contr_calc">
+  <div class="container" id="calcgui">
+    <h2>SimpleCalc</h2>
+    <p id="rs">{{calc_res}}</p>
+    <p>
+      <button ng-click="getval('7')" class="btn btn-primary btn_num" id="b_7">7</button>
+      <button ng-click="getval('8')" class="btn btn-primary btn_num" id="b_8">8</button>
+      <button ng-click="getval('9')" class="btn btn-primary btn_num" id="b_9">9</button>
+      <button ng-click="getval('+')" class="btn btn-info btn_num" id="b_add">+</button>
+      <button ng-click="getval('-')" class="btn btn-info btn_num" id="b_min">-</button>
+      <button ng-click="getval('*')" class="btn btn-info btn_num" id="b_mul">*</button>
+    </p>
+    <p>
+      <button ng-click="getval('4')" class="btn btn-primary btn_num" id="b_4">4</button>
+      <button ng-click="getval('5')" class="btn btn-primary btn_num" id="b_5">5</button>
+      <button ng-click="getval('6')" class="btn btn-primary btn_num" id="b_6">6</button>
+      <button ng-click="getval('\/')" class="btn btn-info btn_num" id="b_div">:</button>
+
+      <button ng-click="getval(',')" class="btn btn-info btn_num" id="b_com">,</button>
+      <button ng-click="doclr()" class="btn btn-warning btn_num" id="b_clr">CLR</button>
+    </p>
+    <p>
+      <button ng-click="getval('1')" class="btn btn-primary btn_num" id="b_1">1</button>
+      <button ng-click="getval('2')" class="btn btn-primary btn_num" id="b_2">2</button>
+      <button ng-click="getval('3')" class="btn btn-primary btn_num" id="b_3">3</button>
+      <button ng-click="getval('(')" class="btn btn-info btn_num" id="b_com">(</button>
+      <button ng-click="getval(')')" class="btn btn-info btn_num" id="b_com">)</button>
+    </p>
+    <p>
+      <button ng-click="getval('0')" class="btn btn-primary  btn_num" id="b_0">0</button>
+      <button ng-click="docalc()" class="btn btn-success btn_enter" id="b_equ">ENTER</button>
+    </p>
+
+
+    </p>
+    <div id="dev_log">{{calc_inp}}</div>
+
+  </div>
+<div class="container about">
+  <h4>by Michael Peer, 2015</h4>
+  <h4><a href="http://michael-peer.net">http://michael-peer.net</a></h4>
+  <h4>michael@michael-peer.net</h4>
+</div>
+</div>
+
+
+ </body>
+</html>

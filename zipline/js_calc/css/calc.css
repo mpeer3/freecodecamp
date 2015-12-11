@@ -1,0 +1,61 @@
+.bk {
+  background-color: lightgrey;
+  background-image: url("../images/number_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.btn_num {
+  width: 40px;
+  height: 40px;
+}
+
+.btn_enter {
+  width: 84px;
+  height: 40px;
+}
+
+#calcgui {
+  border: 1px solid black;
+  width: 296px;
+  height: 350px;
+  background: url('../images/wood.jpg');
+  border-width: 2px;
+  border-style: outset;
+
+}
+
+#rs {
+  width: 260px;
+  height: 30px;
+  background-color: lightcyan;
+  color: black;
+  text-align: right;
+  font-family: Script;
+  font-size: 18px;
+  margin-top: 5px;
+  border-width: 1px;
+  border-style: inset;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.about {
+ background-color: lightgrey;
+  font-size: 10px;
+  color: black;
+  margin: 100px 10px 10px 10px;
+  width:300px;
+
+}
