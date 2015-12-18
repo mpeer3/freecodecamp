@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Michael Peer's Twitch TV</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   
+      <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Kaushan+Script'>
+      <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"> </script>
+      <link rel="stylesheet" href="css/twitch.css">
+       <script src="js/twitch.js"> </script>
+  </head>
+  <body>
+    <div class="container" id="masthead">
+  <div class="row">
+    <div class="col-md-12">
+      <h1> TwitchTV </h1>
+    </div>
+  </div>
+</div>
+
+<div ng-app="TwitchApp" ng-controller="Userloader" class="container">
+  <button ng-click="initapp()" class="btn btn-primary">Update </button>
+
+  <label>Search:
+    <input ng-model="searchText">
+  </label>
+  <div class="row" ng-repeat="user in userlist | orderBy:'name' | filter:searchText">
+    <div ng-class="{'cl_online': user.online, 'cl_offline': !user.online,'cl_closed':user.channel=='#'}" class="col-md-6 useritem">
+      <p><img src="http://www.michael-peer.net/pub/questionmark.png" ng-src="{{user.logo}}" />
+        <span> {{user.name }}</span>
+        <span ng-class="{ 'cl_closed_hide':user.channel!='#'}"> CLOSED</span>
+        <a href="{{user.usrlink}}" ng-class="{ 'cl_hide_link':user.channel=='#'}">
+          <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
+      </p>
+
+      <p><i> {{user.stream}}</i></p>
+
+    </div>
+  </div>
+</div>
+<div class="container about">
+  <h4>by Michael Peer, 2015</h4>
+  <h4><a href="http://michael-peer.net">http://michael-peer.net</a></h4>
+  <h4>michael@michael-peer.net</h4>
+  <p> Background Image: <a href="http://www.freevector.com">http://www.freevector.com</a> </p>
+</div>
+  </body>
+
+
+
+</html>

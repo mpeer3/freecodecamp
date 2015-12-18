@@ -1,0 +1,69 @@
+body {
+  background-image: url("../images/tv.jpg");
+  background-color: #88d8b0;
+}
+
+div {
+  margin: 0.5em;
+  border-radius: 1em;
+}
+
+span {
+  font-size: 1.2em;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  background: grey
+}
+
+.useritem {
+  padding: 1em;
+}
+
+.cl_online {
+  background-color: #99FF66;
+  font-style: normal;
+}
+
+.cl_offline {
+  background-color: #FFFF99;
+  font-style: italic;
+}
+
+.cl_closed_hide {
+  display: none;
+}
+.cl_hide_link{
+  display: none;
+}
+
+.cl_closed {
+  background-color: grey;
+}
+
+.glyphicon {
+  float: right;
+  font-size: 50px;
+}
+
+#masthead {
+  background-color: #F0FAE6;
+  padding: 0em;
+  text-align: center;
+  font-family: Kaushan Script;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+label,
+.about {
+  color: white;
+}
+
+input {
+  color: black;
+}
