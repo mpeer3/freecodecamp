@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Michael Peer's Wikipedia Viewer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"> </script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"> </script>
+ </head>
+ <body>
+	<div ng-app="wikisearch" ng-controller="contr_wikisearch">
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>WIKI-Search</h1>
+        <h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <input type="text"  ng-keyup="keyup()" ng-model="srch" class="form-control" placeholder="Search" aria-describedby="sizing-addon1">
+                        <button class="btn btn-primary" ng-click="do_search()" ng-disabled="autosrch"> Go!</button>
+                        <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Show random WIKI-titles." ng-click="do_rand_search()"> Random Search!</button>
+                        <input type="checkbox" data-toggle="tooltip" data-placement="bottom" title="Automatically run search while you write!" ng-model="autosrch"> Auto-Search
+                    </h4>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+
+    <div class="row ">
+      <div class="col-md-12 cont" ng-repeat="r in res2">
+        <h3>{{r.title}}</h3>
+        <p> {{r.snippet}}</p>
+        <a href="{{r.link}}">
+          <button class="btn btn-default"> More...</button>
+        </a>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="container about">
+  <h4>by Michael Peer, 2015</h4>
+  <h4><a href="http://michael-peer.net">http://michael-peer.net</a></h4>
+  <h4>michael@michael-peer.net</h4>
+</div>
+ </body>
+</html>
