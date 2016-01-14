@@ -1,0 +1,33 @@
+body {
+    background-image: url("http://michael-peer.net/pub/landscape4.jpg");
+    background-color: #88d8b0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    	background-position: center; 
+}
+
+div {
+   // border: 1px solid black;
+    margin:10px;
+   
+}
+.cont{
+    background:rgba(255,255,255,.7) ;  
+}
+#logo{
+    width:150px;
+    height:150px;
+}
+#prv{
+     max-width:100%;
+    max-height:100%;
+}
+.masthead{
+    text-align: center;
+    font-weight: bold;
+    background:rgba(255,255,200,.9) ;
+    font-family:Script;
+}
+.about{
+    background:rgba(255,255,200,.9) ;
+}
