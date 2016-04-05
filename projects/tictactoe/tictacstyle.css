@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-Oct-2015, 20:45:18
+    Author     : root
+*/
+body{
+    background:url("tapete3.jpg");
+    background-repeat: x-repeat;
+    //background-attachment: fixed;
+    //background-position: center; 
+}
+td{
+    width:83px;
+    height:83px;
+    // background-color:lightblue;
+    text-align:center;
+    font-size:40px;
+    border-width:1px;	
+    border-style:groove;
+     text-shadow: 0 2px 0 #ccc;
+}
+table{
+    position:absolute;
+    background:url("wood.jpg");
+    left:176px;
+    top:176px;
+    border-width:2px;
+    border-style:inset;
+    //   margin:180px;
+
+}
+#framediv{
+    background:url("rahmen.png");
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: center; 
+    // border:1px solid white;
+position:relative;
+    left:10px;
+    top:20px;
+    width:602px;
+    height:602px;
+    //margin:20px;
+
+}
+#sw_player{
+    //float:right;
+}
+img{
+    width:100px;
+    height:100px;
+    margin-top:200px;
+}
+
+#header{
+    text-align:center;
+    background-color:white;
+}
+.about{
+    background-color:white;
+}

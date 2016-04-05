@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Michael Peer's TicTacToe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script type="text/javascript" src="tictac.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="tictacstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-md-12">
+                    <h1>Tic-Tac-Toe</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container" ng-app="tictac" ng-controller="contr_tictac">
+            <div class="row">
+                <div class="col-md-8" id="framediv">
+                    <table >
+                        <tbody>
+                            <tr>
+                                <td ng-click="setcell(0, 0)">{{board[0][0]}}</td>
+                                <td ng-click="setcell(1, 0)">{{board[0][1]}}</td>
+                                <td ng-click="setcell(2, 0)">{{board[0][2]}}</td>
+                            </tr>
+                            <tr>
+                                <td ng-click="setcell(0, 1)">{{board[1][0]}}</td>
+                                <td ng-click="setcell(1, 1)">{{board[1][1]}}</td>
+                                <td ng-click="setcell(2, 1)">{{board[1][2]}}</td>
+                            </tr>
+                            <tr>
+                                <td ng-click="setcell(0, 2)">{{board[2][0]}}</td>
+                                <td ng-click="setcell(1, 2)">{{board[2][1]}}</td>
+                                <td ng-click="setcell(2, 2)">{{board[2][2]}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4" id="sw_player">
+                    <img ng-src="{{switchpos}}" ng-click="sw_click()" alt="X">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="checkbox col-md-4">
+                    <label>
+                        <input type="checkbox" ng-checked="{{cheat}}" ng-click="trigger_cheat()"> Cheat mode
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <div class="container about">
+            <h4>by Michael Peer, 2016</h4>
+            <h4><a href="http://michael-peer.net">http://michael-peer.net</a></h4>
+            <h4>michael@michael-peer.net</h4>
+        </div>
+    </body>
+</html>

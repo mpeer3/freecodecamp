@@ -33,11 +33,14 @@
             <li><a href="#jscalc">Simple JS Calc</a></li> 
             <li><a href="#twitchtv">Twitch TV</a></li> 
             <li><a href="#wikiviewer">Wikipedia Viewer</a></li> 
+            <li><a href="#showweather">Show My Weather</a></li> 
+            <li><a href="#tictactoe">TicTacToe</a></li> 
+            <li><a href="#simon">Simon</a></li> 
             
           </ul>
         </li>
       
-          <li><a href="http://www.michael-peer.net/kabelsalat/?page_id=348">Über</a></li>
+          <li><a href="http://www.michael-peer.net/kabelsalat/?page_id=348">Ãœber</a></li>
          
           <li><a href="http://www.michael-peer.net/kabelsalat/?page_id=4">Impressum/Kontakt</a></li>
         </ul>
@@ -115,7 +118,7 @@
            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePomodoro" aria-expanded="false" aria-controls="collapsePomodoro"> Mehr... </button>
 		   <div class="collapse" id="collapsePomodoro">
   			<div class="well">
-              Mein Pomodoro-Timer verwendet das populäre Bootstrap-Framework in Kombination mit jQuery. Herzstück des Javascript-Codes ist die Funktion
+              Mein Pomodoro-Timer verwendet das populäre Bootstrap-Framework in Kombination mit jQuery. HerzstÃ¼ck des Javascript-Codes ist die Funktion
               <i>setInterval(update_disp, 1000) </i> als Taktgeber. Sobald der Start-Button gedrückt wird, wird im Sekundentakt <i>update_disp()</i> aufgerufen. Dadurch werden der Countdown und der Fortschrittsbalken aktualisiert. Mittels <i>trigger_break() </i> wird automatisch zwischen Arbeits- und Pausenintervallen gewechselt. Durch das Drücken des Stop-Buttons wird der Timer via <i>clearInterval() </i> angehalten. Mehr zu meinem Code auf <a href="https://github.com/mpeer3">Github  </a>.
   			</div>
 		  </div>
@@ -222,10 +225,10 @@
        
 
     </div>
-    <div class="container dev_item" id="showweather">
+    <div class="container dev_item " id="showweather">
         <div class="row">
           <div class="col-md-6">
-           <h1>Show Weather </h1>
+           <h1>Show My Weather </h1>
            <a href="http://dev.michael-peer.net/show_weather"> <img id="logo_showweather" src="images/showeather.png" alt="Show Weather"> </a>
           </div>
            <div class="col-md-6">
@@ -246,6 +249,55 @@
        
 
     </div>
+    <div class="container dev_item dev_alt" id="tictac">
+        <div class="row">
+          <div class="col-md-6">
+           <h1>TicTacToe </h1>
+           <a href="http://dev.michael-peer.net/tictactoe"> <img id="logo_tictac" src="images/tictactoe.png" alt="TicTacToe"> </a>
+          </div>
+           <div class="col-md-6">
+            <a href="#mainmenu"><span class="glyphicon glyphicon-triangle-top go_up" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Nach oben"></span></a>
+          <h4> Spielen Sie eine Runde TicTacToe - doch eine kleine Warnung: Das Spiel ist so programmiert, daß Sie nicht gewinnen können!.</h4>
+           <img class="tools_logo" src="images/js.png" alt="JS" data-toggle="tooltip" data-placement="right" title="Javascript">
+           <img class="tools_logo" src="images/angular_logo.png" alt="AngularJS" data-toggle="tooltip" data-placement="right" title="AngularJS">
+           <img class="tools_logo" src="images/bootstrap.jpeg" alt="Bootstrap" data-toggle="tooltip" data-placement="right" title="Bootstrap">
+           <img class="tools_logo" src="images/fcc.png" alt="FreeCodeCamp" data-toggle="tooltip" data-placement="right" title="FreeCodeCamp Challenge">
+           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsetictactoe" aria-expanded="false" aria-controls="collapsetictactoe"> Mehr... </button>
+       <div class="collapse" id="collapsetictactoe">
+        <div class="well">
+             Das Beispiel verwendet den MiniMax Algorithmus - der Computergegner ist so programmiert, dass nur er gewinnt oder das Spiel unentschieden endet. Der Spieler kann aber
+	     schummeln und den Cheat-Modus aktivieren. Im Cheatmodus sucht der Computer seinen nächsten (besten) Zug nicht mehr nach dem MiniMax Algorithmus, sondern wählt ihn zufällig. Mehr zu meinem Code auf <a href="https://github.com/mpeer3">Github 
+	     </div>
+      </div>
+        </div> 
+        </div>
+       
+
+    </div>
+    <div class="container dev_item " id="simon">
+        <div class="row">
+          <div class="col-md-6">
+           <h1>Simon </h1>
+           <a href="http://dev.michael-peer.net/simon"> <img id="logo_simon" src="images/simon.png" alt="Simon"> </a>
+          </div>
+           <div class="col-md-6">
+            <a href="#mainmenu"><span class="glyphicon glyphicon-triangle-top go_up" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Nach oben"></span></a>
+          <h4> Hier finden Sie ein weiteres Spiel - meine Version des berühmten Spieles "Simon"!</h4>
+           <img class="tools_logo" src="images/js.png" alt="JS" data-toggle="tooltip" data-placement="right" title="Javascript">
+           <img class="tools_logo" src="images/angular_logo.png" alt="AngularJS" data-toggle="tooltip" data-placement="right" title="AngularJS">
+           <img class="tools_logo" src="images/bootstrap.jpeg" alt="Bootstrap" data-toggle="tooltip" data-placement="right" title="Bootstrap">
+           <img class="tools_logo" src="images/fcc.png" alt="FreeCodeCamp" data-toggle="tooltip" data-placement="right" title="FreeCodeCamp Challenge">
+           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsesimon" aria-expanded="false" aria-controls="collapsesimon"> Mehr... </button>
+       <div class="collapse" id="collapsesimon">
+        <div class="well">
+             Mehr zu meinem Code auf <a href="https://github.com/mpeer3">Github 
+	     </div>
+      </div>
+        </div> 
+        </div>
+       
+
+    </div>
     <div class="row" id="contact">
       <div class="col-md-4">
         <a href="https://github.com/mpeer3"> <img id="octocat" src="images/Octocat.png" alt="Octocat"> </a>
@@ -253,7 +305,7 @@
       <div class="col-md-4">
         <p>by Michael Peer, Vienna, 2016</p>
        <p>michael@michael-peer.net</p>
-       <p>Letztes Update: 25.02.2016 </p>
+       <p>Letztes Update: 05.04.2016 </p>
       </div>
      </div>
   </body>

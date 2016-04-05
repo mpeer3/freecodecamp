@@ -1,0 +1,62 @@
+body{
+     background-color:blue;
+}
+img{
+ width:35px;
+    height:150px;   
+}
+.ledscont,.about{
+    background-color:white;
+}
+.leds{
+    width:35px;
+    height:150px;
+    display:inline;
+    margin:0;
+    padding-left:9px;
+}
+.enjoy-css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px;
+  overflow: hidden;
+  border: none;
+  font: normal 40px/1 "VT323", Helvetica, sans-serif;
+  color: rgba(255,255,0,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 2px 2px 0 rgba(255,0,0,1) ;
+  background-color:blue;
+}
+.header{
+    //display: inline-block;
+    text-align: center;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px;
+  overflow: hidden;
+  border: none;
+  font: normal 70px/1 "VT323", Helvetica, sans-serif;
+  color: rgba(255,255,0,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 5px 5px 0 rgba(255,0,0,1) ;
+  background-color:blue; 
+}
+button{
+    
+margin-top:100px;
+margin-left: 300px;
+
+}
+label {
+    color:white;
+}
+.about{
+    margin-top:100px;
+}
