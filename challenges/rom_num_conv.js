@@ -1,30 +1,18 @@
-/* Solution by Michael Peer 2016*/
+/* Solution by Michael Peer 2019*/
 
-function convert(inp) {
-var firstpos=["I","II","III","IV","V","VI","VII","VIII","IX"];
-var secpos=["X","XX","XXX","XL","L","LX","LXX","LXXX","XC"];
-var thirdpos=["C","CC","CCC","CD","D","DC","DCC","DCCC","CM"];
-var forpos=["M","MM","MMM","MMMM"];
-var arr=inp.toString().split("");
-var rom=[];
-for (var ct=0;ct<arr.length;ct++){
- pos=(arr.length-ct)-1;
- if (ct===0 && arr[pos]!="0"){
-  rom.push(firstpos[parseInt(arr[pos])-1]);
- }
- if (ct===1 && arr[pos]!="0"){
-  rom.unshift(secpos[parseInt(arr[pos])-1]);
- }
- if (ct===2 && arr[pos]!="0"){
-  rom.unshift(thirdpos[parseInt(arr[pos])-1]);
-
- }
- if (ct===3 && arr[pos]!="0"){
-  rom.unshift(forpos[parseInt(arr[pos])-1]);
- }
-console.log(arr[pos]);
+function convertToRoman(num) {
+ let res=[]
+ //Convert input number to string
+ let tmp=num.toString();
+ //Create array with all roman numerals
+ const romNum=[["I","II","III","IV","V","VI", "VII","VIII","IX"],["X","XX","XXX","XL","L","LX","LXX","LXXX","XC"],["C","CC","CCC","CD","D","DC","DCC","DCCC","CM"],["M","MM","MMM","MMMM","MMMMM","MMMMMM"]]
+//Loop through input string and "unshift" corresponding numeral into array
+for (let c=1; c<=tmp.length;c++){
+    let dig=parseInt(tmp[tmp.length-c])
+    res.unshift(romNum[c-1][dig-1])
 }
-return rom.join("");
+ //Create final output string
+ return res.join("");
 }
 
-console.log(convert(2014));
+convertToRoman(36);
